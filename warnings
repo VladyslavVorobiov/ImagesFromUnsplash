@@ -1,0 +1,64 @@
+npm install --save react-navigation
+
+npm WARN deprecated left-pad@1.3.0: use String.prototype.padStart()
+npm WARN deprecated core-js@2.6.11: core-js@<3 is no longer maintained and not recommended 
+for usage due to the number of issues. Please, upgrade your dependencies to the actual 
+version of core-js@3.
+npm WARN deprecated core-js@1.2.7: core-js@<3 is no longer maintained and not recommended for 
+usage due to the number of issues. Please, upgrade your dependencies
+ to the actual version of core-js@3.
+npm WARN rm not removing 
+/Users/vlad65e/Programming/Mobile/ReactNative/Projects/ImagesFromUnsplash/ImagesUsplash/node_modules/
+.bin/rimraf as it wasn't installed by 
+/Users/vlad65e/Programming/Mobile/ReactNative/Projects/ImagesFromUnsplash/ImagesUsplash/node_modules/
+rimraf
+npm WARN rm not removing 
+/Users/vlad65e/Programming/Mobile/ReactNative/Projects/ImagesFromUnsplash/ImagesUsplash/node_modules/
+.bin/semver as it wasn't installed by 
+/Users/vlad65e/Programming/Mobile/ReactNative/Projects/ImagesFromUnsplash/ImagesUsplash/node_modules/
+semver
+npm WARN rm not removing 
+/Users/vlad65e/Programming/Mobile/ReactNative/Projects/ImagesFromUnsplash/ImagesUsplash/node_modules/
+.bin/jest as it wasn't installed by 
+/Users/vlad65e/Programming/Mobile/ReactNative/Projects/ImagesFromUnsplash/ImagesUsplash/node_modules/
+jest-cli
+npm WARN rm not removing 
+/Users/vlad65e/Programming/Mobile/ReactNative/Projects/ImagesFromUnsplash/ImagesUsplash/node_modules/
+.bin/react-native as it wasn't installed by 
+/Users/vlad65e/Programming/Mobile/ReactNative/Projects/ImagesFromUnsplash/ImagesUsplash/node_modules/
+@react-native-community/cli
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN @react-navigation/native@3.6.2 requires a peer of 
+react-native-gesture-handler@* but none is installed. You must install peer dependencies yourself.
+npm WARN eslint-plugin-react@7.12.4 requires a peer of eslint@^3.0.0 || ^4.0.0 || ^5.0.0 but none is 
+installed. You must install peer dependencies yourself.
+npm WARN eslint-plugin-react-native@3.6.0 requires a peer of eslint@^3.17.0 || ^4 || ^5 but none is 
+installed. You must install peer dependencies yourself.
+npm WARN @typescript-eslint/eslint-plugin@1.13.0 requires a peer of eslint@^5.0.0 but none is installed. 
+You must install peer dependencies yourself.
+npm WARN @typescript-eslint/parser@1.13.0 requires a peer of eslint@^5.0.0 but none is installed. 
+You must install peer dependencies yourself.
+npm WARN tsutils@3.17.1 requires a peer of 
+typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev ||
+ >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta but none is installed. 
+ You must install peer dependencies yourself.
+
+ //------------------------------------------------------------------------------------------------
+npm install --save react-native-gesture-handler
+ //------------------------------------------------------------------------------------------------
+npm install --save react-navigation-stack
+
+npm WARN react-navigation-stack@2.0.16 requires a peer of @react-native-community/masked-view@^0.1.1 
+but none is installed. You must install peer dependencies yourself.
+npm WARN react-navigation-stack@2.0.16 requires a peer of react-native-safe-area-context@^0.6.0 
+but none is installed. You must install peer dependencies yourself.
+
+ //------------------------------------------------------------------------------------------------
+
+https://stackoverflow.com/questions/58988244/could-not-find-the-following-native-modules-after-upgrading-the-react-native-to
+In react-native version 0.60 and above, native modules are now auto-linked. 
+See the docs for more: 
+https://facebook.github.io/react-native/blog/2019/07/03/version-60#native-modules-are-now-autolinked
+
+
