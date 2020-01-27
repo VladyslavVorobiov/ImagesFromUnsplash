@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { View } from 'react-native';
 import style from './styleCardList';
 import Card from '../../components/Card/Card';
@@ -8,20 +8,37 @@ import {connect} from 'react-redux';
 import { fetchData } from '../../store/actions/actionCreators';
 
 const CardList = (props) => {
+  const [isDataRecieved, setIsDataRecieved] = useState(false);
+  let data = [];
 
   useEffect( () => {
-      getDataFromUnsplash();
+      props.fetchData();
     },[]);
 
-    return (
+  return (
       <View style={style.container}>
         {
-          props.isLoading
+          !props.isDataRecieved
           ? <Loader />
-          : <Card />
+          : renderCards()
 			  }
       </View>
-    );
+  );
+
+  function renderCards(){
+    let data = props.dataFromUnsplash.concat();
+  
+    return data.map((item,index) => {
+      return(
+        <Card
+          key = {item.id}
+          imageSource = {item.urls.small}
+          description = {item.description}
+          authorName = {item.user.name}
+        />
+      );
+    });
+  }
 }
 
 function mapStateToProps(state){
@@ -35,7 +52,7 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
 	return{
-		getDataFromUnsplash: () => dispatch(fetchData())
+		fetchData: () => dispatch(fetchData())
 	}
 }
 

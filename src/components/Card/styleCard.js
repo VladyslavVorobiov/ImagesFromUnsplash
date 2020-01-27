@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const style = StyleSheet.create({
     container:{
+        alignItems:"center",
         marginBottom:40,
         borderStyle: "solid",
         borderWidth: 2,
@@ -17,9 +18,16 @@ const style = StyleSheet.create({
         shadowRadius: 6,
         elevation: 17,
     },
-    text:{
+    textAuthor:{
         color: "#40a0fe",
-        fontSize: 20,
+        fontSize: 12,
+        fontWeight: "bold",
+        fontFamily: "Verdana",
+        marginTop: 10,
+    },
+    textDescription:{
+        color: "#40a0fe",
+        fontSize: 10,
         fontWeight: "bold",
         fontFamily: "Verdana",
         marginTop: 10,

@@ -31,19 +31,4 @@ export function fetchData(){
     return { 
         type: FETCH_DATA
     }
-    /*
-	return async dispatch => {
-		dispatch(dataIsLoading(true));
-
-		try {
-   			//const response = await axios.get(url);
-   			dispatch(getDataHasSuccess(response.data));
-   			dispatch(dataIsLoading(false));
-  		} catch (error) {
-  			//TODO error handling
-  			dispatch(getDataHasError(true));
-    		console.error(error);
-  		}
-    }
-    */
 }

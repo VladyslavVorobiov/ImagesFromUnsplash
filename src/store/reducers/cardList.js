@@ -1,7 +1,7 @@
 import {
         GETTING_DATA_HAS_ERROR,
         DATA_IS_LOADING,
-        GETING_DATA_HAS_SUCCESS,
+        GETTING_DATA_HAS_SUCCESS,
 } from '../actions/actionTypes';
 
 const initialState = {
@@ -21,9 +21,13 @@ export default function cardListReducer(state = initialState, action){
             return{
                 ...state, hasErrored: action.hasErrored
             }
-        case GETING_DATA_HAS_SUCCESS:
+        case GETTING_DATA_HAS_SUCCESS:
             return{
-                ...state, dataFromUnsplash: action.dataFromUnsplash, isDataRecieved: true
+                ...state, 
+                dataFromUnsplash: action.dataFromUnsplash, 
+                isDataRecieved: true,
+                isLoading: false,
+                hasErrored: false
             }
         default:
             return state;

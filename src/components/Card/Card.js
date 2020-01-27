@@ -3,7 +3,7 @@ import { Text, View, Image, Alert, TouchableOpacity } from 'react-native';
 import style from './styleCard';
 import Context from '../../context/context';
 
-const Card = () => {
+const Card = (props) => {
   const {navigate} = useContext(Context);
     
   return (
@@ -11,11 +11,11 @@ const Card = () => {
         <TouchableOpacity onPress={ () => navigate('Details') }>
           <Image
             style={style.image}
-            source={{uri: 'https://facebook.github.io/react-native/img/tiny_logo.png'}}
+            source={{uri: props.imageSource}}
           />
         </TouchableOpacity>
-        <Text style={style.text}>Title image</Text>
-        <Text style={style.text}>Author</Text>
+        <Text style={style.textDescription}>{props.description || "No description"} </Text>
+        <Text style={style.textAuthor}>{props.authorName || "No author"} </Text>
       </View>
     );
 }
