@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Text, View, Image } from 'react-native';
 import style from './styleCardDetails';
+import Context from '../../context/context';
 
-const CardDetails = () => {
+const CardDetails = (props) => {
+  const imageSourceFull = props.navigation.state.params.imageSourceFull;
+
     return (
       <View style={style.container}>
         <Image
           style={style.image}
-          source={{uri: 'https://facebook.github.io/react-native/img/tiny_logo.png'}}
+          source={{uri: imageSourceFull}}
         />
       </View>
     );

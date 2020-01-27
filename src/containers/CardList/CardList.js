@@ -32,7 +32,8 @@ const CardList = (props) => {
       return(
         <Card
           key = {item.id}
-          imageSource = {item.urls.small}
+          imageSourceSmall = {item.urls.small}
+          imageSourceFull = {item.urls.full}
           description = {item.description}
           authorName = {item.user.name}
         />

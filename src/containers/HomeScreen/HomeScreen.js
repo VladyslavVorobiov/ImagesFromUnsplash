@@ -8,11 +8,11 @@ import Cardlist from '../CardList/CardList';
 const CardListWithScroll = withScroll(Cardlist);
 
 const HomeScreen = (props) => {
-    const { navigate } = props.navigation;
+    const { navigate, setParams} = props.navigation;
 
     return (
     <Context.Provider value = {{
-        navigate
+        navigate, setParams
     }}>
         <React.Fragment>
             <Header title={"Images"}/>
