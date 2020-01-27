@@ -9,7 +9,6 @@ const Card = (props) => {
   return (
       <View style={style.container}>
         <TouchableOpacity onPress={ () => {
-
            // setParams({ imageSourceFull: props.imageSourceFull });
             navigate('Details', { imageSourceFull: props.imageSourceFull });
           }

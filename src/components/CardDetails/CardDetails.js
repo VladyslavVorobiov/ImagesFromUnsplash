@@ -15,5 +15,4 @@ const CardDetails = (props) => {
       </View>
     );
 }
- 
 export default CardDetails;

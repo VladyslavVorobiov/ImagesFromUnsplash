@@ -21,5 +21,4 @@ const HomeScreen = (props) => {
     </Context.Provider>
     );
 }
-
 export default HomeScreen;
