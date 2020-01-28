@@ -9,7 +9,7 @@ const Card = (props) => {
   return (
       <View style={style.container}>
         <TouchableOpacity onPress={ () => {
-           // setParams({ imageSourceFull: props.imageSourceFull });
+           // TODO use useCallback() for optimize render component
             navigate('Details', { imageSourceFull: props.imageSourceFull });
           }
         }>
